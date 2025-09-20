@@ -1,0 +1,120 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  NVM
+* Top Cell Name: latchede_cp
+* View Name:     schematic
+* Netlisted on:  May 16 14:52:37 2025
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: NVM
+* Cell Name:    latchede_cp
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT latched_cp CLK CLK_NEG IN OUT
+*.PININFO CLK:I CLK_NEG:I IN:I OUT:O V1:B V2:B V3:B V4:B V5:B
+*M1 D G S B P_18 W=12u L=180.00n m=1
+Mcap0 net2 CLK net2 net2 P_18 L=34.5u W=72.4u m=1
+Mcap1 net1 CLK_NEG net1 net1 P_18 L=34.5u W=72.4u m=1
+Mcap2 net0212 CLK net0212 net0212 P_18 L=34.5u W=72.4u m=1
+Mcap3 net0208 CLK_NEG net0208 net0208 P_18 L=34.5u W=72.4u m=1
+Mcap4 net0228 CLK net0228 net0228 P_18 L=34.5u W=72.4u m=1
+Mcap5 net0220 CLK_NEG net0220 net0220 P_18 L=34.5u W=72.4u m=1
+Mcap6 net0216 CLK net0216 net0216 P_18 L=34.5u W=72.4u m=1
+Mcap7 net0224 CLK_NEG net0224 net0224 P_18 L=34.5u W=72.4u m=1
+Mcap8 net44 CLK net44 net44 P_18 L=34.5u W=72.4u m=1
+Mcap9 net48 CLK_NEG net48 net48 P_18 L=34.5u W=72.4u m=1
+Mcap10 net52 CLK net52 net52 P_18 L=34.5u W=72.4u m=1
+Mcap11 net56 CLK_NEG net56 net56 P_18 L=34.5u W=72.4u m=1
+Mcap12 net64 CLK net64 net64 P_18 L=34.5u W=72.4u m=1
+Mcap13 net60 CLK_NEG net60 net60 P_18 L=34.5u W=72.4u m=1
+
+*Mcap0 CLK net2 CLK CLK N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap1 CLK_NEG net1 CLK_NEG CLK_NEG N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap2 CLK net0212 CLK CLK N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap3 CLK_NEG net0208 CLK_NEG CLK_NEG N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap4 CLK net0228 CLK CLK N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap5 CLK_NEG net0220 CLK_NEG CLK_NEG N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap6 CLK net0216 CLK CLK N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap7 CLK_NEG net0224 CLK_NEG CLK_NEG N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap8 CLK net44 CLK CLK N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap9 CLK_NEG net48 CLK_NEG CLK_NEG N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap10 CLK net52 CLK CLK N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap11 CLK_NEG net56 CLK_NEG CLK_NEG N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap12 CLK net64 CLK CLK N_BPW_18 W=34.5u L=72.4u m=4
+*Mcap13 CLK_NEG net60 CLK_NEG CLK_NEG N_BPW_18 W=34.5u L=72.4u m=4
+
+*Xcap0 CLK net2 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap1 CLK_NEG net1 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap2 CLK net0212 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap3 CLK_NEG net0208 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap4 CLK net0228 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap5 CLK_NEG net0220 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap6 CLK net0216 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap7 CLK_NEG net0224 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap8 CLK net44 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap9 CLK_NEG net48 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap10 CLK net52 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap11 CLK_NEG net56 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap12 CLK net64 MIMCAPM l=100u w=205u nx=1 ny=1
+*Xcap13 CLK_NEG net60 MIMCAPM l=100u w=205u nx=1 ny=1
+
+*CC12 CLK_NEG net1 20.5p
+*CC13 net2 CLK 20.5p
+*CC10 CLK_NEG net0208 20.5p
+*CC11 net0212 CLK 20.5p
+*CC9 CLK_NEG net0220 20.5p
+*CC6 CLK_NEG net0224 20.5p
+*CC7 net0228 CLK 20.5p
+*CC8 net0216 CLK 20.5p
+*CC5 CLK_NEG net48 20.5p
+*CC4 net44 CLK 20.5p
+*CC3 CLK_NEG net56 20.5p
+*CC2 net52 CLK 20.5p
+*CC1 net64 CLK 20.5p
+*CC0 CLK_NEG net60 20.5p
+MM24 net2 net1 OUT OUT P_18 W=12u L=180n m=1
+MM25 OUT net2 net1 OUT P_18 W=12u L=180n m=1
+MM26 net2 net1 V6 V6 N_BPW_18 W=5u L=180.00n m=1
+MM27 V6 net2 net1 V6 N_BPW_18 W=5u L=180.00n m=1
+MM21 net0212 net0208 V6 V6 P_18 W=12u L=180.00n m=1
+MM20 V6 net0212 net0208 V6 P_18 W=12u L=180.00n m=1
+MM16 net0216 net0220 V5 V5 P_18 W=12u L=180.00n m=1
+MM17 V5 net0216 net0220 V5 P_18 W=12u L=180.00n m=1
+MM13 net0228 net0224 V4 V4 P_18 W=12u L=180.00n m=1
+MM12 V4 net0228 net0224 V4 P_18 W=12u L=180.00n m=1
+MM9 V3 net44 net48 V3 P_18 W=12u L=180.00n m=1
+MM8 net44 net48 V3 V3 P_18 W=12u L=180.00n m=1
+MM5 V2 net52 net56 V2 P_18 W=12u L=180.00n m=1
+MM4 net52 net56 V2 V2 P_18 W=12u L=180.00n m=1
+MM3 net64 net60 V1 V1 P_18 W=12u L=180.00n m=1
+MM2 V1 net64 net60 V1 P_18 W=12u L=180.00n m=1
+MM23 net0212 net0208 V5 V5 N_BPW_18 W=5u L=180.00n m=1
+MM22 V5 net0212 net0208 V5 N_BPW_18 W=5u L=180.00n m=1
+MM18 net0216 net0220 V4 V4 N_BPW_18 W=5u L=180.00n m=1
+MM19 V4 net0216 net0220 V4 N_BPW_18 W=5u L=180.00n m=1
+MM15 net0228 net0224 V3 V3 N_BPW_18 W=5u L=180.00n m=1
+MM11 V2 net44 net48 V2 N_BPW_18 W=5u L=180.00n m=1
+MM10 net44 net48 V2 V2 N_BPW_18 W=5u L=180.00n m=1
+MM7 V1 net52 net56 V1 N_BPW_18 W=5u L=180.00n m=1
+MM6 net52 net56 V1 V1 N_BPW_18 W=5u L=180.00n m=1
+MM14 V3 net0228 net0224 V3 N_BPW_18 W=5u L=180.00n m=1
+MM1 net64 net60 IN IN N_BPW_18 W=5u L=180.00n m=1
+MM0 IN net64 net60 IN N_BPW_18 W=5u L=180.00n m=1
+.ENDS
+
